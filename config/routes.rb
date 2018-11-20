@@ -9,5 +9,5 @@ Rails.application.routes.draw do
   get 'tasks/:id/edit', to: "tasks#edit", as: :edit_path
   patch 'tasks/:id', to: "tasks#update", as: :update
 
-  delete 'tasks/:id', to: "tasks#destroy"
+  delete 'tasks/:id', to: "tasks#destroy",as: :destroy
 end
